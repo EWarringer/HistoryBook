@@ -1,1 +1,7 @@
 <h1>Example Figures</h1>
+
+<ul>
+  <% @figures.each do |figure| %>
+    <li><%= link_to figures.name, figure_path(figure.id) %></li>
+  <% end %>
+</ul>

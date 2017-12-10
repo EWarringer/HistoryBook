@@ -10,13 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171204024441) do
+ActiveRecord::Schema.define(version: 20171210211016) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "figures", force: :cascade do |t|
-    t.string "name", null: false
+    t.string "name",                                                   null: false
+    t.string "Headline"
+    t.string "description"
+    t.string "photo",       default: "http://i.imgur.com/aLpJ7K4.png"
+    t.date   "birth_date"
+    t.date   "death_date"
+    t.date   "birth_place"
   end
 
   create_table "posts", force: :cascade do |t|
