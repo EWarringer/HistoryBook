@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20171210211016) do
 
   create_table "figures", force: :cascade do |t|
     t.string "name",                                                   null: false
-    t.string "Headline"
+    t.string "headline"
     t.string "description"
     t.string "photo",       default: "http://i.imgur.com/aLpJ7K4.png"
     t.date   "birth_date"
