@@ -16,10 +16,11 @@ ActiveRecord::Schema.define(version: 20171210211016) do
   enable_extension "plpgsql"
 
   create_table "figures", force: :cascade do |t|
-    t.string "name",                                                   null: false
+    t.string "name",                                                      null: false
     t.string "headline"
     t.string "description"
-    t.string "photo",       default: "http://i.imgur.com/aLpJ7K4.png"
+    t.string "profile_photo", default: "http://i.imgur.com/aLpJ7K4.png"
+    t.string "cover_photo",   default: "https://i.imgur.com/XNrTnYb.jpg"
     t.date   "birth_date"
     t.date   "death_date"
     t.date   "birth_place"
