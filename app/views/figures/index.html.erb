@@ -2,6 +2,6 @@
 
 <ul>
   <% @figures.each do |figure| %>
-    <li><%= link_to figure.name  %></li>
+    <li><%= link_to figure.name, figure %></li>
   <% end %>
 </ul>
