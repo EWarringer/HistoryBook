@@ -6,4 +6,8 @@ class FiguresController < ApplicationController
   def show
     @figure = Figure.find(params[:id])
   end
+
+  def new
+  end
+
 end
